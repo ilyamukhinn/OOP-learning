@@ -10,6 +10,7 @@ class Sphere : public Figure
 public:
     void In_Data(std::ifstream& ifst);
     void Out_Data(const double& Density, std::ofstream& ofst); 
+	void Out_Only_Sphere(const double& Density, std::ofstream& ofst);
     Sphere() {};
 };
 

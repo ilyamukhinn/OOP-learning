@@ -31,3 +31,8 @@ double Figure::Get_Density()
 {
     return Density;
 }
+
+void Figure::Out_Only_Sphere(const double& Density, std::ofstream& ofst)
+{
+    ofst << std::endl;
+}

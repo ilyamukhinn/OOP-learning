@@ -12,6 +12,7 @@ public:
     static Figure* In(std::ifstream& ifst);
     virtual void In_Data(std::ifstream& ifst) = 0;
     virtual void Out_Data(const double& Density, std::ofstream& ofst) = 0;
+	virtual void Out_Only_Sphere(const double& Density, std::ofstream& ofst);
 protected:
     Figure() {};
 };

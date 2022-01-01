@@ -77,3 +77,19 @@ void Container::Clear()
 
     len = 0;
 }
+
+void Container::Out_Only_Sphere(std::ofstream& ofst) {
+    ofst << "Only Spheres." << std::endl << std::endl;
+
+    node* current = head;
+
+    for (int i = 0; i < len; i++) 
+    {
+        ofst << i << ": ";
+        current->F->Out_Only_Sphere(current->F->Get_Density(), ofst);
+
+        if (current->next) {
+            current = current->next;
+        }
+    }
+}

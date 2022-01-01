@@ -13,6 +13,16 @@ Its Density is 1.54
 3: It's a Sphere with Radius: 7
 Its Density is 7.7
 
+Only Spheres.
+
+0: It's a Sphere with Radius: 15
+Its Density is 1.54
+
+1: 
+2: 
+3: It's a Sphere with Radius: 7
+Its Density is 7.7
+
 Empty container. 
 Container contains 0 elements.
 
