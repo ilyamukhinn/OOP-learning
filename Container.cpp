@@ -52,6 +52,7 @@ void Container::Out(std::ofstream& ofst)
     {
         ofst << i << ": ";
         current->F->Out_Data(current->F->Get_Density(), ofst);
+		ofst << "The Figure's Volume is " << current->F->Volume() << std::endl << std::endl;
 
         if (current->next)
         {

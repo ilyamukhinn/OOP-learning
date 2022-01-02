@@ -11,3 +11,8 @@ void Parallelepiped::Out_Data(const double& Density, std::ofstream& ofst)
         << ", " << C << std::endl;
     ofst << "Its Density is " << Density << std::endl << std::endl;
 }
+
+double Parallelepiped::Volume() 
+{
+    return (A * B * C);
+}
