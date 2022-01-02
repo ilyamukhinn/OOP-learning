@@ -22,6 +22,7 @@ int main(int argc, char* argv[])
 
     ofst << "Filled container. " << std::endl;
     C.Out(ofst);
+	C.Out_Only_Sphere(ofst);
 
     C.Clear();
 
