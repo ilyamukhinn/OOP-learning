@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
     Container C;
 
     C.In(ifst);
+	C.Sort();
 
     ofst << "Filled container. " << std::endl;
     C.Out(ofst);

@@ -31,3 +31,8 @@ double Figure::Get_Density()
 {
     return Density;
 }
+
+bool Figure::Compare(Figure* other) 
+{
+    return Volume() > other->Volume();
+}

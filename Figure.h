@@ -13,6 +13,7 @@ public:
     virtual void In_Data(std::ifstream& ifst) = 0;
     virtual void Out_Data(const double& Density, std::ofstream& ofst) = 0;
 	virtual double Volume() = 0;
+	bool Compare(Figure* other);
 protected:
     Figure() {};
 };

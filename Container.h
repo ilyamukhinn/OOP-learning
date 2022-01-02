@@ -13,6 +13,7 @@ public:
     void In(std::ifstream& ifst);
     void Out(std::ofstream& ofst);
     void Clear();
+	void Sort();
     Container(); 
     ~Container() { Clear(); }
 };
