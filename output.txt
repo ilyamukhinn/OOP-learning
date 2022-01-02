@@ -6,17 +6,22 @@ Its Density is 1.54
 
 The Figure's Volume is 60
 
-1: It's a Sphere with Radius: 7
+1: It's a Tetrahedron with Side length: 11
+Its Density is 5.3
+
+The Figure's Volume is 156.86
+
+2: It's a Sphere with Radius: 7
 Its Density is 7.7
 
 The Figure's Volume is 359.189
 
-2: It's a Parallelepiped with Edges: 8, 9, 5
+3: It's a Parallelepiped with Edges: 8, 9, 5
 Its Density is 7.8
 
 The Figure's Volume is 360
 
-3: It's a Sphere with Radius: 15
+4: It's a Sphere with Radius: 15
 Its Density is 1.54
 
 The Figure's Volume is 3534.29

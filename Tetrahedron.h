@@ -9,6 +9,7 @@ class Tetrahedron : public Figure {
 public:
     void In_Data(std::ifstream& ifst);
     void Out_Data(const double& Density, std::ofstream& ofst);
+	double Volume();
     Tetrahedron() {};
 };
 
