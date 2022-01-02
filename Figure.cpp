@@ -1,7 +1,6 @@
 #include "Figure.h"
 #include "Sphere.h"
 #include "Parallelepiped.h"
-#include "Tetrahedron.h"
 
 Figure* Figure::In(std::ifstream& ifst) 
 {
@@ -18,15 +17,13 @@ Figure* Figure::In(std::ifstream& ifst)
     case 2:
         F = new Parallelepiped;
         break;
-	case 3:
-        F = new Tetrahedron;
-        break;
     default:
         return 0;
     }
 
     F->In_Data(ifst);
     ifst >> F->Density;
+	ifst >> F->Temperature;
 
     return F;
 }
@@ -36,7 +33,7 @@ double Figure::Get_Density()
     return Density;
 }
 
-bool Figure::Compare(Figure* other) 
+int Figure::Get_Temperature()
 {
-    return Volume() > other->Volume();
+    return Temperature;
 }
