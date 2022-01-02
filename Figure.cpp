@@ -46,3 +46,8 @@ bool Figure::Compare(Figure* other)
 {
     return Volume() > other->Volume();
 }
+
+void Figure::Out_Only_Sphere(const double& Density, const int& Temperature, std::ofstream& ofst)
+{
+    ofst << std::endl;
+}

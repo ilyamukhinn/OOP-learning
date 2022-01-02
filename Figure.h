@@ -16,6 +16,7 @@ public:
     virtual void Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) = 0;
 	virtual double Volume() = 0;
 	bool Compare(Figure* other);
+	virtual void Out_Only_Sphere(const double& Density, const int& Temperature, std::ofstream& ofst);
 protected:
     Figure() {};
 };

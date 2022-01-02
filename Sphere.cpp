@@ -18,3 +18,8 @@ double Sphere::Volume()
 {
     return (M_PI * pow((double)Radius, 3) / 3);
 }
+
+void Sphere::Out_Only_Sphere(const double& Density, const int& Temperature, std::ofstream& ofst)
+{
+    Out_Data(Density, Temperature, ofst);
+}

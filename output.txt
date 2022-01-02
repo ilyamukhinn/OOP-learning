@@ -33,13 +33,16 @@ The Figure's Volume is 3534.29
 
 Only Spheres.
 
-0: It's a Sphere with Radius: 15
-Its Density is 1.54
-
+0: 
 1: 
-2: 
-3: It's a Sphere with Radius: 7
+2: It's a Sphere with Radius: 7
 Its Density is 7.7
+Its Temperature of melting/burning is 2311
+
+3: 
+4: It's a Sphere with Radius: 15
+Its Density is 1.54
+Its Temperature of melting/burning is 230
 
 Empty container. 
 Container contains 0 elements.
