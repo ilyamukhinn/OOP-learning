@@ -6,10 +6,11 @@ void Tetrahedron::In_Data(std::ifstream& ifst)
     ifst >> A; 
 }
 
-void Tetrahedron::Out_Data(const double& Density, std::ofstream& ofst) 
+void Tetrahedron::Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) 
 {
     ofst << "It's a Tetrahedron with Side length: " << A << std::endl;
-    ofst << "Its Density is " << Density << std::endl << std::endl;
+    ofst << "Its Density is " << Density << std::endl;
+    ofst << "Its Temperature of melting/burning is " << Temperature << std::endl << std::endl;
 }
 
 double Tetrahedron::Volume() 

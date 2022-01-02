@@ -10,6 +10,7 @@ class Sphere : public Figure
 public:
     void In_Data(std::ifstream& ifst);
     void Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst); 
+	double Volume();
     Sphere() {};
 };
 

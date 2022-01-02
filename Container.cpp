@@ -52,6 +52,7 @@ void Container::Out(std::ofstream& ofst)
     {
         ofst << i << ": ";
         current->F->Out_Data(current->F->Get_Density(), current->F->Get_Temperature(), ofst);
+		ofst << "The Figure's Volume is " << current->F->Volume() << std::endl << std::endl;
 
         if (current->next)
         {
@@ -76,4 +77,32 @@ void Container::Clear()
     }
 
     len = 0;
+}
+
+void Container::Sort() 
+{
+    if (len > 1) 
+    {
+        node* first = head;
+        node* second = head->next;
+        node* temp = new node;
+
+        for (int i = 0; i < len - 1; i++) 
+        {
+            for (int j = 0; j < len - i - 1; j++) 
+            {
+                if (first->F->Compare(second->F)) 
+                {
+                    temp->F = first->F;
+                    first->F = second->F;
+                    second->F = temp->F;
+                }
+
+                second = second->next;
+            }
+
+            first = first->next;
+            second = first->next;
+        }
+    }
 }

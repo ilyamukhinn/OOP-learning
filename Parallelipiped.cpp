@@ -12,3 +12,8 @@ void Parallelepiped::Out_Data(const double& Density, const int& Temperature, std
     ofst << "Its Density is " << Density << std::endl;
 	ofst << "Its Temperature of melting/burning is " << Temperature << std::endl << std::endl;
 }
+
+double Parallelepiped::Volume() 
+{
+    return (A * B * C);
+}

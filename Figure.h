@@ -14,6 +14,8 @@ public:
     static Figure* In(std::ifstream& ifst);
     virtual void In_Data(std::ifstream& ifst) = 0;
     virtual void Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) = 0;
+	virtual double Volume() = 0;
+	bool Compare(Figure* other);
 protected:
     Figure() {};
 };
