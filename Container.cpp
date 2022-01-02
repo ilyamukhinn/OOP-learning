@@ -51,7 +51,7 @@ void Container::Out(std::ofstream& ofst)
     for (int i = 0; i < len; i++)
     {
         ofst << i << ": ";
-        current->F->Out_Data(current->F->Get_Density(), ofst);
+        current->F->Out_Data(current->F->Get_Density(), current->F->Get_Temperature(), ofst);
 
         if (current->next)
         {

@@ -23,6 +23,7 @@ Figure* Figure::In(std::ifstream& ifst)
 
     F->In_Data(ifst);
     ifst >> F->Density;
+	ifst >> F->Temperature;
 
     return F;
 }
@@ -30,4 +31,9 @@ Figure* Figure::In(std::ifstream& ifst)
 double Figure::Get_Density()
 {
     return Density;
+}
+
+int Figure::Get_Temperature()
+{
+    return Temperature;
 }

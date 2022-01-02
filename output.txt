@@ -3,15 +3,19 @@ Container contains 4 elements.
 
 0: It's a Sphere with Radius: 15
 Its Density is 1.54
+Its Temperature of melting/burning is 230
 
 1: It's a Parallelepiped with Edges: 8, 9, 5
 Its Density is 7.8
+Its Temperature of melting/burning is 1718
 
 2: It's a Parallelepiped with Edges: 4, 3, 5
 Its Density is 1.54
+Its Temperature of melting/burning is 318
 
 3: It's a Sphere with Radius: 7
 Its Density is 7.7
+Its Temperature of melting/burning is 2311
 
 Empty container. 
 Container contains 0 elements.

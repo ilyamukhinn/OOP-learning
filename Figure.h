@@ -7,11 +7,13 @@
 class Figure 
 {
     double Density;
+	int Temperature;
 public:
     double Get_Density();
+	int Get_Temperature();
     static Figure* In(std::ifstream& ifst);
     virtual void In_Data(std::ifstream& ifst) = 0;
-    virtual void Out_Data(const double& Density, std::ofstream& ofst) = 0;
+    virtual void Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) = 0;
 protected:
     Figure() {};
 };
