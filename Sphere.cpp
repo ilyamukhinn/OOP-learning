@@ -4,7 +4,17 @@
 
 void Sphere::In_Data(std::ifstream& ifst) 
 {
-    ifst >> Radius;
+    std::string str_radius = "";
+    std::getline(ifst, str_radius); //Read radius
+    if (!(is_Number(str_radius, true)))
+    {
+        std::cout << "Incorrect data" << std::endl;
+        exit(1);
+    }
+    else
+    {
+        Radius = atoi(str_radius.c_str());
+    }
 }
 
 void Sphere::Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) 

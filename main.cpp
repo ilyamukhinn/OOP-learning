@@ -11,7 +11,20 @@ int main(int argc, char* argv[])
     }
 
     std::ifstream ifst(argv[1]);
+	
+	if (!ifst.is_open()) 
+	{
+        std::cout << "No input file found or could not open!" << std::endl;
+        exit(1);
+    }
+	
     std::ofstream ofst(argv[2]);
+	
+	if (!ofst.is_open()) 
+	{
+        std::cout << "No output file found or could not open!" << std::endl;
+        exit(1);
+    }
 
     std::cout << "Start" << std::endl;
 

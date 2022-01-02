@@ -3,7 +3,17 @@
 
 void Tetrahedron::In_Data(std::ifstream& ifst) 
 {
-    ifst >> A; 
+    std::string str_side = "";
+    std::getline(ifst, str_side); //Read side
+    if (!(is_Number(str_side, true)))
+    {
+        std::cout << "Incorrect data" << std::endl;
+        exit(1);
+    }
+    else
+    {
+        A = atoi(str_side.c_str());
+    }
 }
 
 void Tetrahedron::Out_Data(const double& Density, const int& Temperature, std::ofstream& ofst) 
