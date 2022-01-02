@@ -1,5 +1,5 @@
 Filled container. 
-Container contains 4 elements.
+Container contains 5 elements.
 
 0: It's a Sphere with Radius: 15
 Its Density is 1.54
@@ -10,7 +10,10 @@ Its Density is 7.8
 2: It's a Parallelepiped with Edges: 4, 3, 5
 Its Density is 1.54
 
-3: It's a Sphere with Radius: 7
+3: It's a Tetrahedron with Side length: 11
+Its Density is 5.3
+
+4: It's a Sphere with Radius: 7
 Its Density is 7.7
 
 Empty container. 

@@ -1,6 +1,7 @@
 #include "Figure.h"
 #include "Sphere.h"
 #include "Parallelepiped.h"
+#include "Tetrahedron.h"
 
 Figure* Figure::In(std::ifstream& ifst) 
 {
@@ -16,6 +17,9 @@ Figure* Figure::In(std::ifstream& ifst)
         break;
     case 2:
         F = new Parallelepiped;
+        break;
+	case 3:
+        F = new Tetrahedron;
         break;
     default:
         return 0;
